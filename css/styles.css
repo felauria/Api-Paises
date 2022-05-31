@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-areas: 
+    "titulo titulo"
+    "paises favoritos";
+    color: white;
+    background-color: rgb(13, 9, 27);
+
+}
+
+/* div{
+     padding: 15px; 
+     border: red 2px solid; 
+} */
+
+li{
+    height: 60px;
+    /* border: 1px white solid; */
+    /* border-bottom: 0.5px white solid; */
+    list-style-type: none;
+    width: 95%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* .titulo{
+    text-align: center;
+} */
+
+
+.container-titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.container-btnContinentes{
+    margin-top: 10px;
+}
+
+.continentePais{
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.btn{
+    margin: 5px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.btn:focus{
+    background-color: rgb(255, 2, 141);
+    color: white;
+    border: white;
+}
+
+.container-paises{
+    /* background-color: bisque; */
+    grid-area: paises;
+}
+
+.container-favoritos{
+    /* background-color: yellow; */
+    grid-area: favoritos;
+}
+
+.bandeiras{
+    height: 32px;
+}
+
+.btnFavorito{
+    height: 100%;
+    background: none;
+    border: none;
+    margin-right: 15px;
+}
+
+.coracao{
+    height: 35px;
+}
+
+.legenda{
+    margin-left: 45px;
+}
+
+.legenda2{
+    margin-left: 45px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.all{
+    background-color: rgb(58, 75, 107);
+    color: white;
+    border: 2px solid white;
+}
+
+.africa{
+    background-color: rgb(82, 26, 26);
+    color: bisque;
+    border: 2px solid bisque;
+}
+
+.asia{
+    background-color: rgb(117, 0, 0);
+    color: rgb(255, 140, 0);
+    border: 2px solid rgb(255, 140, 0);
+}
+
+.america{
+    background-color: rgb(22, 95, 0);
+    color: rgb(255, 222, 32);
+    border: 2px solid rgb(255, 222, 32);
+}
+
+.europa{
+    background-color: rgb(18, 0, 83);
+    color: rgb(255, 139, 139);
+    border: 2px solid rgb(255, 139, 139);
+}
+
+.oceania{
+    background-color: rgb(0, 63, 71);
+    color: rgb(0, 255, 221);
+    border: 2px solid rgb(0, 255, 221);
+}
+
+.oceano-antartico{
+    background-color: rgb(72, 112, 104);
+    color: bisque;
+    border: 2px solid bisque;
+}
+
+.polar{
+    background-color: rgb(2, 5, 165);
+    color: rgb(255, 252, 249);
+    border: 2px solid rgb(255, 252, 249);
+}
+
+#searchbar{
+    width: 30%;
+}
+
+
+

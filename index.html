@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Países API</title>
+</head>
+<body> 
+    <div class="container-titulo">
+        <h1 class="titulo">Fetch Países - Favorite seus países</h1>
+        <input type="text" name="busca" id="searchbar" onkeyup="buscaPais()">
+        <div class="container-btnContinentes">
+            <button class="btn all" onclick="filterContinent('all')">Todos</button>
+            <button class="btn africa" onclick="filterContinent('Africa')">África</button>
+            <button class="btn america" onclick="filterContinent('Americas')">América</button>
+            <button class="btn asia" onclick="filterContinent('Asia')">Ásia</button>
+            <button class="btn europa" onclick="filterContinent('Europe')">Europa</button>
+            <button class="btn oceania" onclick="filterContinent('Oceania')">Oceania</button>
+            <button class="btn oceano-antartico" onclick="filterContinent('Antarctic Ocean')">Oceano Antartico</button>
+            <button class="btn polar" onclick="filterContinent('Polar')">Polar</button>
+        </div>
+    </div>
+    <div class="container-paises" id="paises">
+
+    </div>
+    <div class="container-favoritos" id="favoritos">
+    
+    </div>
+</body>
+</html>
